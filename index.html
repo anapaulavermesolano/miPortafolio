@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>na Paula Verme</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="css/animate.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="shortcut icon" href="images/LOGO.ico">
+    <link rel="stylesheet" href="css/flickity.min.css" media="screen">
+    <link href="https://fonts.googleapis.com/css?family=Delius+Swash+Caps" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,200,200italic,300,300italic,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" type="text/css">
+    <links href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700" rel="stylesheet" type="text/css"></links>
+  </head>
+  <body>
+    <header id="header">
+      <nav id="menu" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" class="navbar-toggle collapsed"><span class="sr-only">toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="#home" class="navbar-brand titulo"> <img src="images/Logo.menu.png"></a>
+          </div>
+          <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#sobre_mi" class="hvr-underline-from-center">SOBRE MÍ</a></li>
+              <li><a href="#habilidades" class="hvr-underline-from-center">HABILIDADES</a></li>
+              <li><a href="#proyectos" class="hvr-underline-from-center">MIS PROYECTOS</a></li>
+              <li><a href="#contact" class="hvr-underline-from-center">CONTÁCTAME</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section id="home">
+      <div class="container">
+        <div class="banner"><img src="images/anapaula.png" alt="" class="img-responsive img-banner animated fadeInDown"></div>
+      </div>
+    </section>
+    <section id="sobre_mi">
+      <div class="container">
+        <div class="padding">
+          <div class="row">
+            <div class="col-md-6 col-sm-12 slider slider">
+              <div data-flickity-options="{ &quot;autoPlay&quot;: 2300 }" class="gallery js-flickity">
+                <div class="gallery-cell foto-one"></div>
+                <div class="gallery-cell foto-two"></div>
+                <div class="gallery-cell foto-three"></div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <div class="text moved">
+                <h1>Sobre Mí</h1>
+                <p>Hola soy Ana Paula Verme, y soy Fron-End Developer.</p>
+                <p>Me considero una persona <b>autodidacta, creativa, responsable y puntual </b>en el cumplimiento de mis trabajos. Me gusta aprender cosas nuevas cada día. Me desenvuelvo bien bajo presión y soy <b>comprometida </b>con los proyectos que me planteo, <b>dando el 100% de mí siempre.</b></p>
+                <p>En Laboratoria he aprendido a desarrollar páginas web incluyendo los lenguajes de <b>HTML5, CSS3, JADE, SASS, JavaScript, jQuery. </b>Con la capacidad de crear páginas web adaptables a diferentes tamaños de dispositivos móviles.</p>
+                <p>Si estás interesado en desarrollar un sitio web o necesitas una Front-End Developer, yo te puedo ayudar con los diferentes servicios que brindo.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="habilidades">
+      <div class="container">
+        <div class="padding">
+          <div class="text">
+            <h1 class="tittle">HABILIDADES</h1>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div data-flickity-options="{ &quot;lazyLoad&quot;: 2, &quot;initialIndex&quot;: 2 }" class="gallery js-flickity">
+          <div class="gallery-cell"><img data-flickity-lazyload="images/html5.png" class="img-responsive gallery-cell-image animated habilidades"/>
+            <ul class="skills-bar-container">
+              <label>HTML5</label><span id="html-pourcent" class="percent"></span>
+              <li><span id="progress-html" class="progressbar colorhtml"></span></li>
+            </ul>
+          </div>
+          <div class="gallery-cell"><img data-flickity-lazyload="images/css3.png" class="img-responsive gallery-cell-image animated habilidades-two"/>
+            <ul class="skills-bar-container">
+              <label>CSS3</label><span id="css-pourcent" class="percent"></span>
+              <li><span id="progress-css" class="progressbar colorcss"></span></li>
+            </ul>
+          </div>
+          <div class="gallery-cell"><img data-flickity-lazyload="images/javascript.png" class="img-responsive gallery-cell-image animated habilidades"/>
+            <ul class="skills-bar-container">
+              <label>Javascript</label><span id="javascript-pourcent" class="percent"></span>
+              <li><span id="progress-javascript" class="progressbar colorjs"></span></li>
+            </ul>
+          </div>
+          <div class="gallery-cell"><img data-flickity-lazyload="images/jade.png" class="img-responsive gallery-cell-image animated habilidades-two"/>
+            <ul class="skills-bar-container">
+              <label>Jade</label><span id="jade-pourcent" class="percent"></span>
+              <li><span id="progress-jade" class="progressbar colorjade"></span></li>
+            </ul>
+          </div>
+          <div class="gallery-cell"><img data-flickity-lazyload="images/sass.png" class="img-responsive gallery-cell-image animated habilidades"/>
+            <ul class="skills-bar-container">
+              <label>Sass</label><span id="sass-pourcent" class="percent"></span>
+              <li><span id="progress-sass" class="progressbar colorsass"></span></li>
+            </ul>
+          </div>
+          <div class="gallery-cell"><img data-flickity-lazyload="images/jquery.png" class="img-responsive gallery-cell-image animated habilidades-two"/>
+            <ul class="skills-bar-container">
+              <label>jQuery</label><span id="jQuery-pourcent" class="percent"></span>
+              <li><span id="progress-jQuery" class="progressbar progressbar colorjq"></span></li>
+            </ul>
+          </div>
+          <div class="gallery-cell"><img data-flickity-lazyload="images/github.png" class="img-responsive gallery-cell-image animated habilidades"/>
+            <ul class="skills-bar-container">
+              <label>Github</label><span id="github-pourcent" class="percent"></span>
+              <li><span id="progress-github" class="progressbar colorgh"></span></li>
+            </ul>
+          </div>
+          <div class="gallery-cell"><img data-flickity-lazyload="images/bootstrap.png" class="img-responsive gallery-cell-image animated habilidades-two"/>
+            <ul class="skills-bar-container">
+              <label>Bootstrap</label><span id="bootstrap-pourcent" class="percent"></span>
+              <li><span id="progress-bootstrap" class="progressbar colorb"></span></li>
+            </ul>
+          </div>
+          <div class="gallery-cell"><img data-flickity-lazyload="images/responsive.png" class="img-responsive gallery-cell-image animated habilidades"/>
+            <ul class="skills-bar-container">
+              <label>Responsive Design </label><span id="responsive-pourcent" class="percent"></span>
+              <li><span id="progress-responsive" class="progressbar colorrd"></span></li>
+            </ul>
+          </div>
+          <div class="gallery-cell"><img data-flickity-lazyload="images/wordpress.png" class="img-responsive gallery-cell-image animated habilidades-two"/>
+            <ul class="skills-bar-container">
+              <label>Wordpress</label><span id="wordpress-pourcent" class="percent"></span>
+              <li><span id="progress-wordpress" class="progressbar colorw"></span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="proyectos">
+      <div class="container">
+        <div class="padding">
+          <div class="text">
+            <h1 class="tittle">MIS PROYECTOS</h1>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-12 up">
+            <div class="image view"><img src="images/tictactoe.png" class="img-responsive"/>
+              <div class="hover-effect">
+                <h2 class="tittle1">TICTAC-<span class="tittle2">TOE</span></h2>
+                <div class="mg"></div><a href="http://anapaulavermesolano.github.io/TICTACTOE" class="button">VIEW<span class="fa fa-heart"></span></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12 up">
+            <div class="image view"><img src="images/reloj.png" class="img-responsive"/>
+              <div class="hover-effect">
+                <h2 class="tittle1">Reloj-<span class="tittle2">Digital</span></h2>
+                <div class="mg"></div><a href="http://anapaulavermesolano.github.io/Reloj.Digital/" class="button">VIEW<span class="fa fa-heart"></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-sm-12 up">
+            <div class="image view"><img src="images/Agency-Theme.png" class="img-responsive"/>
+              <div class="hover-effect">
+                <h2 class="tittle1">Agency-<span class="tittle2">Theme</span></h2>
+                <div class="mg"></div><a href="http://anapaulavermesolano.github.io/Agency-Theme" class="button">VIEW<span class="fa fa-heart"></span></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12 up">
+            <div class="image view"><img src="images/Love-Blog.png" class="img-responsive"/>
+              <div class="hover-effect">
+                <h2 class="tittle1">Love-<span class="tittle2">Blog</span></h2>
+                <div class="mg"></div><a href="http://anapaulavermesolano.github.io/LoveBLog" class="button">VIEW<span class="fa fa-heart"></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-sm-12 up">
+            <div class="image view"><img src="images/Flat-Theme.png" class="img-responsive"/>
+              <div class="hover-effect">
+                <h2 class="tittle1">Flat-<span class="tittle2">Theme</span></h2>
+                <div class="mg"></div><a href="http://anapaulavermesolano.github.io/Flat_theme" class="button">VIEW<span class="fa fa-heart"></span></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12 up">
+            <div class="image view"><img src="images/Spring-Game.png" class="img-responsive"/>
+              <div class="hover-effect">
+                <h2 class="tittle1">Spring-<span class="tittle2">Game</span></h2>
+                <div class="mg"></div><a href="http://anapaulavermesolano.github.io/responsive-blog-gridsystem" class="button">VIEW<span class="fa fa-heart"></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="container">
+        <div class="padding">
+          <div class="text">
+            <h1 class="tittle">CONTÁCTAME</h1>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid"><img src="images/gats.png" class="img-responsive"/><a href="https://www.facebook.com/anapaula.vermesolano.56"><img src="images/cuadro-facebook.png" class="img-responsive facebook animated swings"/></a><a href="https://twitter.com/AnaPaulaVerme"><img src="images/cuadro-twitter.png" class="img-responsive twitter animated swing"/></a><a href="https://github.com/anapaulavermesolano"><img src="images/cuadro-github.png" class="img-responsive github animated swings"/></a><a href="https://pe.linkedin.com/in/ana-paula-verme-solano-457889120"><img src="images/cuadro-linkedin.png" class="img-responsive linkedin animated swing"/></a>
+      </div>
+    </section>
+    <footer>
+      <div class="container-fluid correo text-center">
+        <p class="text-icon"> <i class="fa fa-envelope animated pulse"></i>anapaulavermesolano9@gmail.com </p>
+        <div class="pd"></div>
+        <p class="text-icon"> <i class="fa fa-phone animated tada"></i>+51 991 474 474</p>
+        <div class="pd"> </div><a href="ANA PAULA VERME CV.pdf" class="text-icon decoration"><i class="glyphicon glyphicon-file animated pulse"></i>C.V</a>
+        <p class="copyright">Copyright © Ana Paula Verme Solano 2016</p>
+      </div>
+    </footer>
+    <script src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/effects.js"></script>
+    <script src="js/flickity.pkgd.min.js"></script>
+    <script src="js/menu-scroll.js"></script>
+  </body>
+</html>

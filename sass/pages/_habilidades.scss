@@ -1,0 +1,232 @@
+#habilidades {
+  .text {
+    h1:before, h1:after {
+      width: calc((100% - 355px) / 2);
+    }
+  }
+  .container-fluid {
+    padding: 0;
+    position: relative;
+    @media screen and (max-width: 789px){
+      padding: 15px;
+    }
+    .flickity-viewport {
+      // height: 520px !important;
+      @media screen and (max-width: 358px){
+        height: 300px !important;
+      }
+      @media screen and (min-width: 868px) and (max-width: 1400px){
+        height: 570px !important;
+      }
+      // @media screen and (min-width: 310px) and (max-width: 468px){
+      //     height: 400px !important;
+      // }
+    }
+    .gallery-cell {
+      width: 32%;
+      height: 470px;
+      margin-right: 20px;
+      background: transparent;
+      position: relative;
+      @media screen and (min-width: 768px) and (max-width: 968px){
+        width: 80%;
+        height: 670px;
+      }
+      @media screen and (min-width:568px) and (max-width: 767px){
+        height: 650px;
+        width: 80%;
+      }
+      @media screen and (min-width: 481px) and (max-width: 567px){
+        height: 550px;
+        width: 80%;
+      }
+      @media screen and (max-width: 480px){
+          height: 420px !important;
+          width: 80%;
+      }
+    }
+    .gallery-cell-image {
+      display: block;
+      max-height: 100%;
+      margin: 0 auto;
+      opacity: 0;
+      -webkit-transition: opacity 0.4s;
+        transition: opacity 0.4s;
+        @media screen and (max-width: 789px){
+        width: 80%;
+      }
+    }
+    /* fade in lazy loaded image */
+    .gallery-cell-image.flickity-lazyloaded,
+    .gallery-cell-image.flickity-lazyerror {
+      opacity: 1;
+    }
+  } 
+}
+
+.skills-bar-container{
+  position: relative;
+  width: 40%;
+  min-width: 300px;
+  margin: 5% auto;
+  list-style:none;
+  left: -30px;
+  @media screen and (min-width: 481px) and (max-width: 567px){
+  min-width: 250px;
+}
+@media screen and (max-width: 480px){
+    min-width: 200px;
+}
+}
+
+.skills-bar-container li{
+  background: #555;
+  position: relative;
+  width: 100%;
+  height: 5px;
+  margin-bottom: 30px;
+  
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.skills-bar-container label{
+  color: #fff;
+  position: relative;
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.skills-bar-container .percent{
+  color: #fff;
+  font-size: 14px;
+  float: right;
+}
+
+.progressbar{
+  position:absolute;
+  width:0%;
+
+  height: 100%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  
+  -webkit-animation-duration: 2.5s;
+  animation-duration: 2.5s;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+#progress-html{
+  -webkit-animation-name: progress-html;
+  animation-name: progress-html;
+  -webkit-animation-delay: 5.7s;
+  animation-delay: 5.7s;
+}
+#progress-jade{
+  -webkit-animation-name: progress-jade;
+  animation-name: progress-jade;
+  -webkit-animation-delay: 5.7s;
+  animation-delay: 5.7s;
+}
+
+#progress-css{
+  -webkit-animation-name: progress-css;
+  animation-name: progress-css;
+  -webkit-animation-delay: 5.7s;
+  animation-delay: 5.7s;
+}
+#progress-sass{
+  -webkit-animation-name: progress-sass;
+  animation-name: progress-sass;
+  -webkit-animation-delay: 5.7s;
+  animation-delay: 5.7s;
+}
+
+#progress-javascript{
+  -webkit-animation-name: progress-javascript;
+  animation-name: progress-javascript;
+  -webkit-animation-delay: 5.7s;
+  animation-delay: 5.7s;
+}
+#progress-jQuery{
+  -webkit-animation-name: progress-jQuery;
+  animation-name: progress-jQuery;
+  -webkit-animation-delay: 5.7s;
+  animation-delay: 5.7s;
+}
+#progress-github{
+  -webkit-animation-name: progress-github;
+  animation-name: progress-github;
+  -webkit-animation-delay: 6.7s;
+  animation-delay: 6.7s;
+}
+
+#progress-bootstrap{
+  -webkit-animation-name: progress-bootstrap;
+  animation-name: progress-bootstrap;
+  -webkit-animation-delay: 6.7s;
+  animation-delay: 6.7s;
+}
+
+#progress-responsive{
+  -webkit-animation-name: progress-responsive;
+  animation-name: progress-responsive;
+  -webkit-animation-delay: 6.7s;
+  animation-delay: 6.7s;
+}
+#progress-wordpress{
+  -webkit-animation-name: progress-wordpress;
+  animation-name: progress-wordpress;
+  -webkit-animation-delay: 6.7s;
+  animation-delay:6.7s;
+}
+
+.colorhtml{ background-color: #E54D26; }
+.colorcss{ background-color: #006EB9; }
+.colorjs{ background-color: #D6BA33; }
+.colorjq{ background-color: #0868AB; }
+.colorjade{ background-color: #B62626; }
+.colorgh{ background-color: #21A38B; }
+.colorb{ background-color: #5C2A4B; }
+.colorrd{ background-color: #F58221; }
+.colorw{ background-color: #F2C200; }
+.colorsass{ background-color: #CC6699; }
+
+@-webkit-keyframes progress-html{0%{width: 0%;} 100%{ width: 80%;}}
+@-webkit-keyframes progress-css{0%{width: 0%;} 100%{ width: 80%;}}
+@-webkit-keyframes progress-javascript{0%{width: 0%;} 100%{ width: 40%;}}
+@-webkit-keyframes progress-jade{0%{width: 0%;} 100%{ width: 80%;}}
+@-webkit-keyframes progress-sass{0%{width: 0%;} 100%{ width: 80%;}}
+@-webkit-keyframes progress-jQuery{0%{width: 0%;} 100%{ width: 40%;}}
+@-webkit-keyframes progress-github{0%{width: 0%;} 100%{ width: 40%;}}
+@-webkit-keyframes progress-bootstrap{0%{width: 0%;} 100%{ width: 70%;}}
+@-webkit-keyframes progress-responsive{0%{width: 0%;} 100%{ width: 80%;}}
+@-webkit-keyframes progress-wordpress{0%{width: 0%;} 100%{ width:40%;}}
+
+@-moz-keyframes progress-html{0%{width: 0%;} 100%{ width: 80%;}}
+@-moz-keyframes progress-css{0%{width: 0%;} 100%{ width: 80%;}}
+@-moz-keyframes progress-javascript{0%{width: 0%;} 100%{ width: 40%;}}
+@-moz-keyframes progress-jade{0%{width: 0%;} 100%{ width: 80%;}}
+@-moz-keyframes progress-sass{0%{width: 0%;} 100%{ width: 80%;}}
+@-moz-keyframes progress-jQuery{0%{width: 0%;} 100%{ width: 40%;}}
+@-moz-keyframes progress-github{0%{width: 0%;} 100%{ width: 40%;}}
+@-moz-keyframes progress-bootstrap{0%{width: 0%;} 100%{ width: 70%;}}
+@-moz-keyframes progress-responsive{0%{width: 0%;} 100%{ width: 80%;}}
+@-moz-keyframes progress-wordpress{0%{width: 0%;} 100%{ width: 40%;}}
+
+@keyframes progress-html{0%{width: 0%;} 100%{ width: 80%;}}
+@keyframes progress-css{0%{width: 0%;} 100%{ width: 80%;}}
+@keyframes progress-javascript{0%{width: 0%;} 100%{ width: 40%;}}
+@keyframes progress-jade{0%{width: 0%;} 100%{ width: 80%;}}
+@keyframes progress-sass{0%{width: 0%;} 100%{ width: 80%;}}
+@keyframes progress-jQuery{0%{width: 0%;} 100%{ width: 40%;}}
+@keyframes progress-github{0%{width: 0%;} 100%{ width: 40%;}}
+@keyframes progress-bootstrap{0%{width: 0%;} 100%{ width: 70%;}}
+@keyframes progress-responsive{0%{width: 0%;} 100%{ width: 80%;}}
+@keyframes progress-wordpress{0%{width: 0%;} 100%{ width: 40%;}}

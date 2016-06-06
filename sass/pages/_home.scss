@@ -1,0 +1,29 @@
+#home {
+	background: url(../images/laptop-notebook.jpg) no-repeat;
+    background-size: cover;
+    // background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: color;
+    .banner {
+    	position: relative;
+		.img-banner {
+			width: 85%;
+			margin: 100px auto 120px;
+			@media screen and (min-width: 968px){
+				width: 70%;
+			}
+		}
+		button {
+			@include titulos(20px, 400, 10px, $white, normal);
+			@include boton(transparent, 10px 30px, $white, 10px auto 30px, 2px solid $white);
+			display: block;
+			text-align: center;
+			font-family: $Raleway;
+			&:hover {
+				box-shadow: $purple 1px 1px 25px;
+				background-color: rgba(129, 43, 87, 0.4);
+				border: 2px solid$purple;
+			}
+		}
+    }
+}
