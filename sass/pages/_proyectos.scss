@@ -1,0 +1,115 @@
+#proyectos {
+	.text {
+		h1:before, h1:after {
+			width: calc((100% - 400px) / 2);
+		}
+	}
+	.col-md-6.col-sm-12 {
+		position: relative;
+		.image {
+			position: relative;
+			overflow: hidden;
+			text-align: center;
+			cursor: default;
+			margin-top: 30px;	
+			.hover-effect {
+				position: absolute;
+				overflow: hidden;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+			}
+			img {
+				display: block;
+				position: relative;
+			}
+			.tittle1 {
+				@include titulos(3em, 400, 15% auto 10%, $white, normal);
+				.tittle2 {
+					font-weight: 900;
+				}
+			}
+			.tittle1, .tittle2 {
+				font-family: $Raleway;
+				text-transform: uppercase;
+				position: relative;
+				@media screen and (max-width: 480px){
+			    	font-size: 25px;
+    			}
+			}
+			.button {
+				@include titulos(1.7em, 500, 20px auto, $white, normal);
+				background: $black;
+				padding: 10px 17px;
+				text-decoration: none;
+				font-family: $Raleway;
+				@media screen and (max-width: 480px){
+			    	padding: 10px;
+			    	font-size: 1.2em;
+    			}
+				.fa-heart {
+					color: white;
+					font-size: 0.9em;
+    				padding-left: 5px;
+				}
+				&:hover {
+					box-shadow: 0px 0px 17px #65153E;
+					border: 2px solid white;
+					border-radius: 5px;
+					text-shadow: 0px 0px 5px $white;
+					.fa-heart {
+						-webkit-transition: color 1.5s;
+						transition: color 1.5s;
+						color: red;
+						text-shadow: 0px 0px 10px red;
+					}
+				}
+			}
+		}
+		.view {
+			border: 5px solid $white;
+			&:hover {
+				border: none;
+			}
+			img {
+				transform: scaleY(1);
+  				transition: all .7s ease-in-out;
+			}
+			.hover-effect {
+				background: radial-gradient(ellipse at bottom left, rgba(129, 43, 87, 0.72) 10%, rgba(129, 43, 87, 0.37) 40%), linear-gradient(to bottom, rgba(175, 58, 118, 0.61), rgba(56, 13, 35, 0.76)), linear-gradient(135deg, rgba(242, 222, 222, 0.85), rgba(23, 21, 22, 0.45));
+				transition: all 0.5s linear;
+				padding: 20px;
+  				opacity: 0;
+  				border: 10px solid white;
+  				box-shadow: inset 0 0 50px white;
+  				&:hover{
+					border: 10px solid black;
+  					box-shadow: inset 0 0 50px black;
+
+  				}
+			}
+			.tittle1, .tittle2, i, .button {
+				transform: scale(0);
+				transition: all 0.5s linear;
+				opacity: 0;
+			} 
+		}
+		.view:hover img {
+			-webkit-transform: scale(1.5);
+			transform: scale(1.5);
+			
+		}
+		.view:hover .hover-effect {
+			opacity: 1;
+			border: inset 0 0 10px $black;
+		}
+		.view:hover .tittle1,
+		.view:hover .tittle2,
+		.view:hover p,
+		.view:hover a.button {
+			transform: scale(1);
+			opacity: 1;
+		}		
+	}
+}

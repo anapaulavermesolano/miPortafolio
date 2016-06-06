@@ -1,0 +1,108 @@
+
+mixin jpg(jpg)
+    img.img-responsive(src="images/" + jpg + ".jpg")
+
+mixin png(png)
+    img.img-responsive(src="images/" + png + ".png")
+
+mixin tittle(Name) 
+    .container
+        .padding
+            .text
+                h1.tittle= Name
+
+mixin proyectos(png, tittle, tittle2, link)
+    .col-md-6.col-sm-12.up
+        .image.view
+            +png(png)
+            .hover-effect
+                h2.tittle1=tittle
+                    span.tittle2=tittle2
+                .mg
+                a.button(href=link) VIEW
+                    span.fa.fa-heart
+
+mixin socialredes()
+    a(href="https://www.facebook.com/anapaula.vermesolano.56")
+        img.img-responsive.facebook.animated.swings(src="images/cuadro-facebook.png")
+    a(href="https://twitter.com/AnaPaulaVerme")
+        img.img-responsive.twitter.animated.swing(src="images/cuadro-twitter.png")
+    a(href="https://github.com/anapaulavermesolano")
+        img.img-responsive.github.animated.swings(src="images/cuadro-github.png")
+    a(href="https://pe.linkedin.com/in/ana-paula-verme-solano-457889120")
+        img.img-responsive.linkedin.animated.swing(src="images/cuadro-linkedin.png")
+
+mixin habilidades()
+    .gallery.js-flickity(data-flickity-options='{ "lazyLoad": 2, "initialIndex": 2 }')
+            .gallery-cell
+                img.img-responsive.gallery-cell-image.animated.habilidades(data-flickity-lazyload="images/html5.png")
+                ul.skills-bar-container
+                    label HTML5
+                    span.percent#html-pourcent
+                    li
+                        span.progressbar.colorhtml#progress-html
+            .gallery-cell
+                img.img-responsive.gallery-cell-image.animated.habilidades-two(data-flickity-lazyload="images/css3.png")
+                ul.skills-bar-container
+                    label CSS3
+                    span.percent#css-pourcent
+                    li
+                        span.progressbar.colorcss#progress-css
+            .gallery-cell
+                img.img-responsive.gallery-cell-image.animated.habilidades(data-flickity-lazyload="images/javascript.png")
+                ul.skills-bar-container
+                    label Javascript
+                    span.percent#javascript-pourcent
+                    li
+                        span.progressbar.colorjs#progress-javascript
+            .gallery-cell
+                img.img-responsive.gallery-cell-image.animated.habilidades-two(data-flickity-lazyload="images/jade.png")
+                ul.skills-bar-container
+                    label Jade
+                    span.percent#jade-pourcent
+                    li
+                        span.progressbar.colorjade#progress-jade
+            .gallery-cell
+                img.img-responsive.gallery-cell-image.animated.habilidades(data-flickity-lazyload="images/sass.png")
+                ul.skills-bar-container
+                    label Sass
+                    span.percent#sass-pourcent
+                    li
+                        span.progressbar.colorsass#progress-sass
+            .gallery-cell
+                img.img-responsive.gallery-cell-image.animated.habilidades-two(data-flickity-lazyload="images/jquery.png")
+                ul.skills-bar-container
+                    label jQuery
+                    span.percent#jQuery-pourcent
+                    li
+                        span.progressbar.progressbar.colorjq#progress-jQuery
+            .gallery-cell
+                img.img-responsive.gallery-cell-image.animated.habilidades(data-flickity-lazyload="images/github.png")
+                ul.skills-bar-container
+                    label Github
+                    span.percent#github-pourcent
+                    li
+                        span.progressbar.colorgh#progress-github
+            .gallery-cell
+                img.img-responsive.gallery-cell-image.animated.habilidades-two(data-flickity-lazyload="images/bootstrap.png")
+                ul.skills-bar-container
+                    label Bootstrap
+                    span.percent#bootstrap-pourcent
+                    li
+                        span.progressbar.colorb#progress-bootstrap
+            .gallery-cell
+                img.img-responsive.gallery-cell-image.animated.habilidades(data-flickity-lazyload="images/responsive.png")
+                ul.skills-bar-container
+                    label Responsive Design 
+                    span.percent#responsive-pourcent
+                    li
+                        span.progressbar.colorrd#progress-responsive
+            .gallery-cell
+                img.img-responsive.gallery-cell-image.animated.habilidades-two(data-flickity-lazyload="images/wordpress.png")
+                ul.skills-bar-container
+                    label Wordpress
+                    span.percent#wordpress-pourcent
+                    li
+                        span.progressbar.colorw#progress-wordpress
+
+

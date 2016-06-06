@@ -1,0 +1,14 @@
+@mixin titulos($fsize, $fw, $mg, $color, $fontstyle) {
+    font-size: $fsize;
+    font-weight: $fw;
+    margin: $mg;
+    color: $color;
+    font-style: $fontstyle;
+}
+@mixin boton($bgbtn, $pdbtn, $colorbtn, $mgbtn, $borderbtn) {
+    background-color: $bgbtn;
+    padding: $pdbtn;
+    color: $colorbtn;
+    margin: $mgbtn;
+    border: $borderbtn;
+}

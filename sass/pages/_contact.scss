@@ -1,0 +1,137 @@
+#contact {
+	.text {
+		h1 {
+			margin-bottom: -70px;
+		}
+		h1:before, h1:after {
+			width: calc((100% - 355px) / 2);
+		}
+	}
+	.container-fluid{
+		position: relative;
+		img {
+			position: relative;
+			left: -25px;
+		}
+		a .facebook ,a .twitter,a .linkedin, a .github{
+		  	position: absolute;
+		    width: 13.5rem;
+		    height: 12rem;
+		    z-index: 1;
+		    @media screen and  (max-width: 480px){
+			    width: 17% !important;
+    			height: 27% !important;
+			}
+			@media screen and (min-width: 481px) and (max-width: 768px){
+			    width: 13.2%;
+    			height: 20.7%;	
+			}
+			@media screen and (min-width: 769px) and (max-width: 1023px){
+			    width: 15.2% ;
+    			height: 20.7% ;	
+			}
+		}
+		a .facebook {
+			top: 73.3%;
+    		left: 16.4%;
+    		@media screen and (min-width: 481px) and (max-width: 768px){
+    			left: 15.6%;
+			}
+		}
+		a .twitter {
+		    top: 55.9%;
+    		left: 35.5%;    		
+    		@media screen and  (max-width: 480px){
+			    top: 47.9%;
+    			left: 30%;
+			}
+    		@media screen and (min-width: 481px) and (max-width: 768px){
+			    top: 58.9%;
+    			left: 32.9%;
+			}
+			@media screen and (min-width: 769px) and (max-width: 1023px){
+			    top: 58.8%;
+    			left: 27.1%;
+			}
+		}
+		a .linkedin{
+		    top: 63.2%;
+    		left: 73.5%;
+		    @media screen and (max-width: 480px){
+			   	top: 64%;
+    			left: 74%;
+			}
+			@media screen and (min-width: 481px) and (max-width: 768px){
+				top: 67.5%;
+				left: 77%;
+			}
+			@media screen and (min-width: 769px) and (max-width: 1023px){
+				top: 62.5%;
+    			left: 76%;
+			}
+			@media only screen and (min-width: 1024px){
+				top: 68.5%;
+    			left: 80.5%;
+
+			}
+		}
+		a .github {
+		    top: 77%;
+    		left: 49.7%;			
+    		@media screen and (max-width: 480px){
+    			top: 76.5%;
+				left: 45%;
+   			}
+		}
+	}
+	
+}
+footer {
+	position: relative;
+	margin: 3px 0;
+	.correo {
+		position: relative;
+		bottom: -50px;
+		width: 100%;
+		padding: 10px;
+		background-color: transparent;
+	}
+	.text-icon{
+		@include titulos(20px, 400, 20px auto 0, $white, normal);
+		display: inline-block;
+		font-family: $Raleway;
+		&:hover {
+			color: $rose;
+			-webkit-transition: color 0.5s;
+			transition: color 0.5s;
+		}
+		@media screen and (min-width: 320px) and (max-width: 480px){
+			    font-size: 15px;
+    	}
+    	@media screen and (max-width: 320px){
+			    font-size: 12px;
+    	}
+	}
+	.copyright {
+		@include titulos(14px, 500, 30px auto, $white, normal);
+		display: block;
+		font-family: $Raleway;
+	}
+	.decoration {
+		text-decoration: none; 
+	}	
+	.fa, .glyphicon-file{
+		font-size: 20px;
+		color: $white;
+		display: inline-block;
+		margin-right: 10px;
+		&:hover {
+			color: $rose;
+			-webkit-transition: color 0.5s;
+			transition: color 0.5s;
+		}
+	}
+	.fa-phone {position: relative;
+		top: 5px;
+	}
+}

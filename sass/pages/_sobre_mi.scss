@@ -1,0 +1,88 @@
+#sobre_mi {
+	.container {
+		.text {
+			h1 {
+				margin: 0 auto 30px;
+				@media screen and (max-width: 990px){
+				margin-top: 100px !important;
+				}
+			}
+			h1:before, h1:after {
+				width: calc((100% - 255px) / 2);
+			}
+			p {
+				@include titulos(18px, 500, 10px 0px, $black, normal);
+				font-family: $Delius;
+				text-align: center;
+				background-color: rgba(255, 230, 225, 0.6);
+			}
+		}
+		.row {
+			margin: 50px 0;
+			.slider {
+				border: 5px solid #AF3A76;
+				padding: 0;
+			}
+		}
+		.gallery {
+		  background: #AF3A76;
+		}
+		.gallery-cell {
+		  width: 100%;
+		  height: 500px;
+		  counter-increment: gallery-cell;
+		}
+		.foto-one {
+			background: url(../images/foto.png) no-repeat;
+			background-size: cover;
+		}
+		.foto-two {
+			background: url(../images/grupo.jpg) no-repeat;
+			background-size: cover;
+		}
+		.foto-three {
+			background: url(../images/laboratoria.jpg) no-repeat;
+			background-size: cover;
+			background-position: 40%;
+		}
+	}
+}
+.text {
+	position: relative;
+	h1 {
+		@include titulos(50px, 700, 40px auto 40px, $rose, normal);
+		font-family: $Raleway;
+		text-align: center;
+		text-transform: uppercase;
+		word-spacing:-0.15em;
+		@media only screen and (max-width: 480px){
+			font-size: 40px;
+		}
+		@media only screen and (max-width: 300px){
+			font-size: 20px;
+		}
+	}
+	h1:before, h1:after {
+	// content: "\2605\2605";  /*00d7 Some fancy character */
+	// color: $rose;
+	// font-size: 30px;
+		content: "";
+		position: absolute;
+		top: 28px;
+		height: 2px;
+		background: -webkit-linear-gradient(left,rgba(255,255,255,0), $rose);
+		background: linear-gradient(to right,rgba(255,255,255,0), $rose);  
+		@media screen and (min-width:320px) and (max-width: 768px){
+			height: 2.5px;
+		}
+	}
+	h1:before {
+		left: 0;
+	}
+	h1:after {
+		left: auto;
+		right: 0;
+		background: -webkit-linear-gradient(left,$rose,rgba(255,255,255,0));
+
+	}
+}
